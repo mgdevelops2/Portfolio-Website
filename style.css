@@ -1,14 +1,25 @@
+body{
+    border: dotted 3px brown;
+    padding: 10px;
+}
+
 section{
-    border: solid 2px rgb(140, 182, 43);
-    padding: 10px;   
+    border: solid 2px rgba(20, 17, 181, 0.531);
+    padding: 1%;
 }
     div{
         border: solid 1px purple;
+        padding: 1%;
+
     }
         h2 {
             border: solid 1px purple;
+            padding: 1%;
         }
+        
 footer {
-    border: solid 2px rgb(140, 182, 43);
+    border: solid 2px rgba(30, 57, 178, 0.504);
+    padding: 1%;
+
 }
 
