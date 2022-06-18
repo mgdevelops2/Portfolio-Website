@@ -1,0 +1,14 @@
+section{
+    border: solid 2px rgb(140, 182, 43);
+    padding: 10px;   
+}
+    div{
+        border: solid 1px purple;
+    }
+        h2 {
+            border: solid 1px purple;
+        }
+footer {
+    border: solid 2px rgb(140, 182, 43);
+}
+
