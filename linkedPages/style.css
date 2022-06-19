@@ -1,0 +1,86 @@
+/*adding styling to structural containers*/
+/*first we will add a border to define our boxes. */
+
+body{
+    /* lets add some color to our background.*/
+    background-color: rgba(0, 0, 0, 0.893);
+    color: rgb(173, 165, 165);
+    border: dotted 3px brown;
+    padding: 10px;
+
+}
+
+header{
+    border: dotted 3px rgb(190, 162, 37);
+}
+
+section{
+    border: solid 2px rgba(20, 17, 181, 0.531);
+    padding: 1%;
+}
+    div{
+        border: solid 1px purple;
+        padding: 1%;
+
+    }
+        h2 {
+            border: solid 1px purple;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+
+        }
+        h3 {
+            border: solid 1px purple;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+footer {
+    border: solid 2px rgba(30, 57, 178, 0.504);
+    padding: 1%;
+
+}
+
+/*adding styling to classes*/
+#aboutMe{
+    text-align: center;
+    }
+
+
+.logo{
+    max-width: 75px;
+    width: auto;
+}
+.highlightedProjects{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-content: center;
+    }
+    
+.activelyWorking{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-content: center;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+.box{
+    text-align: center;
+    align-content: center;
+
+}
+
+
