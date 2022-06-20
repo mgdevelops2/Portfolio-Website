@@ -1,5 +1,8 @@
 /*adding styling to structural containers*/
 /*first we will add a border to define our boxes. */
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 body{
     /* lets add some color to our background.*/
@@ -7,7 +10,8 @@ body{
     color: rgb(173, 165, 165);
     border: dotted 3px brown;
     padding: 10px;
-
+    max-width: 1260px;
+    margin: auto;
 }
 
 header{
@@ -16,12 +20,11 @@ header{
 
 section{
     border: solid 2px rgba(20, 17, 181, 0.531);
-    padding: 1%;
+    /* padding: 1%; */
 }
     div{
         border: solid 1px purple;
         padding: 1%;
-
     }
         h2 {
             border: solid 1px purple;
@@ -44,15 +47,20 @@ footer {
 
 }
 
-/*adding styling to classes*/
+/*adding styling to classes and IDs*/
 #aboutMe{
     text-align: center;
     }
 
-
 .logo{
     max-width: 75px;
     width: auto;
+}
+.centeredInfo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
 }
 .highlightedProjects{
     display: flex;
@@ -80,7 +88,7 @@ footer {
 .box{
     text-align: center;
     align-content: center;
-
 }
 
 
+/* Add rotation function to .logo*/
