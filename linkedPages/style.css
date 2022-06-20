@@ -2,93 +2,71 @@
 /*first we will add a border to define our boxes. */
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color:aliceblue;
 }
 
 body{
-    /* lets add some color to our background.*/
-    background-color: rgba(0, 0, 0, 0.893);
-    color: rgb(173, 165, 165);
     border: dotted 3px brown;
-    padding: 10px;
-    max-width: 1260px;
+    max-width: fit-content;
     margin: auto;
 }
 
 header{
-    border: dotted 3px rgb(190, 162, 37);
-}
-
-section{
-    border: solid 2px rgba(20, 17, 181, 0.531);
-    /* padding: 1%; */
-}
-    div{
-        border: solid 1px purple;
-        padding: 1%;
-    }
-        h2 {
-            border: solid 1px purple;
-            padding: 1%;
-            display: flex;
-            justify-content: center;
-
-        }
-        h3 {
-            border: solid 1px purple;
-            padding: 1%;
-            display: flex;
-            justify-content: center;
-
-        }
-
-footer {
-    border: solid 2px rgba(30, 57, 178, 0.504);
-    padding: 1%;
-
-}
-
-/*adding styling to classes and IDs*/
-#aboutMe{
-    text-align: center;
-    }
-
-.logo{
-    max-width: 75px;
-    width: auto;
-}
-.centeredInfo{
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
-
 }
-.highlightedProjects{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-content: center;
+    .centeredInfo{
+        /* border: solid 2px; */
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: fit-content;
+        max-height: auto;
+        padding: 0px 0px 70px 0px;
     }
-    
-.activelyWorking{
-    display: flex;
-    justify-content: space-evenly;
+        .logo{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+section{
+    border: solid burlywood;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
     text-align: center;
-    align-content: center;
-
+    padding: 0px 0px 70px 0px;
 }
+/* the classes below will allow you to edit the text in the corresponding fields if your wish */
+    .aboutMe{
 
-.footer{
+    }
+    .technicalSkills{
+        
+    }
+
+    .highlightedProjects,
+    .activelyWorking{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .box{
+        border: solid darkolivegreen;
+    }
+
+
+footer{
     display: flex;
     justify-content: center;
-    text-align: center;
-    align-content: center;
-
-}
-
-.box{
-    text-align: center;
+    align-items: center;
     align-content: center;
 }
-
-
-/* Add rotation function to .logo*/
