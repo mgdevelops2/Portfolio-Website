@@ -7,8 +7,6 @@
 }
 
 body{
-    border: dotted 3px brown;
-    max-width: fit-content;
     margin: auto;
 }
 
@@ -17,56 +15,72 @@ header{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 0px 100px 0px;
 }
     .centeredInfo{
-        /* border: solid 2px; */
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
 
-        max-width: fit-content;
-        max-height: auto;
-        padding: 0px 0px 70px 0px;
+        max-width: 70%;
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 50px 0px;
     }
         .logo{
-            max-width: 100%;
+            max-width: 60%;
             display: flex;
             justify-content: center;
             align-self: center;
+        
+            /* ok lets try adding some animation to this logo */
+            animation: rotation 3s;
+
+            /* now lets add a declaration value for time */
+            animation-timing-function: linear;
+
+            /* and now lets declare how many times the loop will run */
+            animation-iteration-count: infinite;
         }
+            @keyframes rotation {
+                from {
+                    transform: rotateY(0deg);
+                } to {
+                    transform: rotateY(359deg);
+                }
+            }
+
 
 section{
-    border: solid burlywood;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
     text-align: center;
-    padding: 0px 0px 70px 0px;
+    padding: 0px 0px 50px 0px;
 }
 /* the classes below will allow you to edit the text in the corresponding fields if your wish */
     .aboutMe{
-
+        padding: 0px 0px 50px 0px;
     }
+
     .technicalSkills{
-        
+        padding: 0px 0px 50px 0px;
     }
 
     .highlightedProjects,
     .activelyWorking{
         display: flex;
         justify-content: space-evenly;
+        padding: 50px 0px 50px 0px;
     }
-
+    
+    /* You can add additional functions to the boxes*/
     .box{
-        border: solid darkolivegreen;
+        color: aliceblue;
     }
-
 
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding: 50px 0px 50px 0px;
 }
